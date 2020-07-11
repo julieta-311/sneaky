@@ -53,11 +53,6 @@ done
 
 eval set -- "$params"
 
-#initial_sleep_seconds="$1"
-#n_shots="$2"
-#seconds_between_shots="$3"
-#active_window_only="$4"
-
 printf "\n**** Welcome sneaky little one! ****\n\n"
 
 printf "Initial sleep time set to %d seconds,\n" "$initial_sleep_seconds"
