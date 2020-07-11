@@ -1,7 +1,9 @@
 # sneaky
 A tiny little bash script for personal use to automatically take screenshots repeatedly. 
 
-`sneaky.sh` will install `gnome-screenshot` if it's not already installed, then it will wait for <i><initial sleep time in seconds></i>. After that it will start taking screenshots every <i><delay between shots in seconds></i> until it reaches the <i><number of screenshots></i> it was requested.
+`sneaky.sh` will install `gnome-screenshot` if it's not already installed, then it will wait for an 
+`initial sleep time in seconds`, after which it will start taking screenshots every `delay between shots in seconds` 
+until it reaches the `number of screenshots` it was requested.
   
 By default, 
 
@@ -27,11 +29,11 @@ By default,
 <strong>Examples</strong>
 To take 10 screenshots (one per minute) of the active window after waiting 90 seconds run:
 
-`./sneaky.sh -n 10 -w`
+```./sneaky.sh -n 10 -w```
 
 To take 10 screenshots (one every 30 seconds) after waiting two minutes run:
 
-`.sneaky.sh -n 10 -d 30 -s 120`
+```.sneaky.sh -n 10 -d 30 -s 120```
 
 Note that if there is no `-w` flag and there are multiple screens, the screenshot will include
 all screens.
