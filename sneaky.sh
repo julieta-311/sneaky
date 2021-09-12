@@ -57,7 +57,7 @@ printf "\n**** Welcome sneaky little one! ****\n\n"
 
 if [ "$(dpkg -l | grep gnome-screenshot)" == "" ]; then
   printf "\n\n Installing gnome-screenshot... \n"
-  sudo apt-get install gnome-screenshot
+  sudo pacman -Sy gnome-screenshot
 fi
 
 printf "Initial sleep time set to %d seconds,\n" "$initial_sleep_seconds"
