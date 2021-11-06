@@ -6,6 +6,7 @@ A tiny little bash script for personal use to automatically take screenshots rep
 To run, `sneaky.sh` needs for [gnome-screenshot](https://github.com/GNOME/gnome-screenshot) to be installed. This can be done as follows,
 
 Arch Linux based distros: `sudo pacman -Sy gnome-screenshot`.
+
 Ubuntu: `sudo apt-get install gnome-screenshot`.
   
 By default, 
