@@ -53,12 +53,6 @@ done
 
 eval set -- "$params"
 
-if [ "$(dpkg -l | grep gnome-screenshot)" == "" ]; then
-  printf "\n\n Installing gnome-screenshot... \n"
-  sudo pacman -Sy gnome-screenshot
-  printf "Done.\n\n"
-fi
-
 printf "**** Welcome sneaky little one! ****\n\n"
 
 printf "Initial sleep time set to %d seconds,\n" "$initial_sleep_seconds"
