@@ -85,9 +85,9 @@ for i in $(seq "$n_shots"); do
   printf "Sleeping for %d seconds... \nTaking shot number %d of %d after my nap\n\n" \
    "$seconds_between_shots" "$i" "$n_shots"
   if [ $active_window_only == 1 ]; then
-    gnome-screenshot -B -w -d "$seconds_between_shots"
+    gnome-screenshot -w -d "$seconds_between_shots"
   else 
-   gnome-screenshot -B -d "$seconds_between_shots"
+   gnome-screenshot -d "$seconds_between_shots"
   fi
 done
 
